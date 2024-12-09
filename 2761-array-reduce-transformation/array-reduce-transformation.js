@@ -6,13 +6,8 @@
  */
 var reduce = function(nums, fn, init) {
     let res = init;
-    if(nums.length) {
         nums.forEach((element) => {
             res = fn(res,element);
         })
         return res;
-    }
-    else {
-        return res;
-    }
 };

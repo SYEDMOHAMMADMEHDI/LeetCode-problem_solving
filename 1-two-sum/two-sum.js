@@ -4,6 +4,7 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
+    // Beginner friendly code , this also works fine
     // for(let i=0; i < nums.length; i++) {
     //     for(let j=i+1; j < nums.length; j++) {
     //         if(nums[i]+nums[j] == target){
@@ -11,6 +12,8 @@ var twoSum = function(nums, target) {
     //         }
     //     }
     // }
+
+    //below code using map
     const checked = new Map();
     for (let i=0; i < nums.length; i++){
         const num =nums[i];

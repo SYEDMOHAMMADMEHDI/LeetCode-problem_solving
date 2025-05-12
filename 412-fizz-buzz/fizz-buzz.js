@@ -15,7 +15,7 @@ var fizzBuzz = function(n) {
             arr.push("Buzz");
         }
         else {
-            arr.push(`${i}`);
+            arr.push(i.toString());
         }
     }
     return arr;

@@ -4,11 +4,12 @@
  */
 var containsDuplicate = function(nums) {
     const seen = new Set();
-    for(const value of nums){
-        if(seen.has(value)) {
+    for(const val of nums) {
+        if(seen.has(val)) {
             return true;
         }
-        seen.add(value);
+        seen.add(val);
     }
     return false;
+
 };

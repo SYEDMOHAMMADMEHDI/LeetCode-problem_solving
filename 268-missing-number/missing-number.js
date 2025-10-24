@@ -4,8 +4,11 @@
  */
 var missingNumber = function(nums) {
     let n = nums.length;
-    let total = n * (n + 1) / 2;
-    let sum = nums.reduce((a,c) => a + c,0);
+    let total = n * (n+1)/2;
+    let sum = nums.reduce((acc, curr) => {
+        return acc + curr
+    },0);
+
     return total - sum;
     
 };
